@@ -77,16 +77,16 @@ $pi = 3.141592;
 -   Des langages à typage explicite peuvent faire appel à l'*inférence de types* dans certaines situations
     -   permet la déduction automatique des types
 
-**En Java 10, on peut omettre le type pour les variables locales (mot-vlé `var`).**
+**En Java 10, on peut omettre le type pour les variables locales (mot-clé `var`).**
 ```java
 var listofMovies = new HashMap<User,List<String>>();
 ```
 
 ### Typage statique vs. dynamique
 -   Le typage est *statique* si l’information de type est associée à l’identificateur
-    -   ⇒ la vérification des types peut être réalisée lors de la compilation
+    -   \Rightarrow  la vérification des types peut être réalisée lors de la compilation
 -   Le typage est *dynamique* si l’information de type est portée par l’objet lui-même
-    -   ⇒ la vérification se fait durant l’exécution
+    -   \Rightarrow  la vérification se fait durant l’exécution
 
 ### Typage statique
 -   Améliore la fiabilité du programme (plus de vérifications plus précoces)
@@ -155,7 +155,7 @@ aimeLesArbres(X):- chien(X).
 ?- aimeLesArbres(idefix)
 ```
 
-### Solveur de Sudoku 4*x**x*4 en Prolog - Requête
+### Solveur de Sudoku 4*x*4 en Prolog - Requête
 ```prolog
 - requête
 | ?- sudoku([_, _, 2, 3,
@@ -165,7 +165,7 @@ aimeLesArbres(X):- chien(X).
              Solution).
 ```
 
-### Solveur de Sudoku 4*x**x*4 en Prolog - Résolution 1/3
+### Solveur de Sudoku 4*x*4 en Prolog - Résolution 1/3
 ```prolog
 - la solution doit être unifiée avec le problème
 - le problème comporte 16 chiffres
@@ -180,7 +180,7 @@ sudoku(Puzzle, Solution) :-
   fd_domain(Puzzle, 1, 4),
 ```
 
-### Solveur de Sudoku 4*x**x*4 en Prolog - Résolution 2/3
+### Solveur de Sudoku 4*x*4 en Prolog - Résolution 2/3
 ```prolog
 - les blocs (lignes, colonnes et carrés) sont définis
 
@@ -200,7 +200,7 @@ Square3 = [C1, C2, D1, D2],
 Square4 = [C3, C4, D3, D4],
 ```
 
-### Solveur de Sudoku 4*x**x*4 en Prolog - Résolution 3/3
+### Solveur de Sudoku 4*x*4 en Prolog - Résolution 3/3
 ```prolog
 - le prédicat valid reçoit une liste de 12 blocs
 - la liste vide est valide
@@ -224,6 +224,7 @@ valid([Row1, Row2, Row3, Row4,
 -   Possède un système de typage statique, fort et principalement implicite (inférence de types)
 
 ### Haskell 1/2
+
 ```haskell
 -- Calcul de la fonction factorielle
 
@@ -240,11 +241,11 @@ fact x
    | otherwise = 1
 
 -- Liste et intervalle
-fac x = product [1..x]
+fact x = product [1..x]
 ```
 
 ### Haskell 2/2
-===========
+
 ```haskell
 -- Fonctions d'ordre supérieure
 mapList f [] = []

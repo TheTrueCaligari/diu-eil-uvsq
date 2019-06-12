@@ -1,4 +1,4 @@
-class Voyageur(object):
+class Voyageur():
 	def __init__(self, debut, dest, vision, pas):
 		self.debut    = debut
 		self.position = debut
@@ -11,3 +11,5 @@ class Voyageur(object):
 
 	def deplacement(self):
 		pass
+
+class Carte():
